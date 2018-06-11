@@ -137,6 +137,9 @@ abuso text
 
 );
 
+insert into ocorrencias (advertencia,data_ocorrencia,motivo,abuso) values ('G','11/05/2016','aluno jogou pedra no professor');
+insert into ocorrencias (advertencia,data_ocorrencia,motivo,abuso) values ('M','05/05/2018','aluno pixou a carteira com tinta');
+insert into ocorrencias (advertencia,data_ocorrencia,motivo,abuso) values ('L','25/04/2017','aluno desrespeitou outros participantes');;;
 -- a linha abaixo cria a tabela turma
 create table turma (
 idturma int not null primary key auto_increment,
