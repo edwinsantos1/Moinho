@@ -108,13 +108,21 @@ num_da_residencia varchar(50)
 
 );
 
+
+
 -- a linha abaixo cria a tabela pais(mae,pai)
 create table pais (
 idpais int not null primary key auto_increment,
-nome varchar(45)
-
+nome_pai varchar(45),
+nome_mae varchar(45)
 );
 
+-- essa linha insere valores a tabela acima
+insert into pais (nome_pai,nome_mae) values ('joao fernando silva','maria lucia silva');
+insert into pais (nome_pai,nome_mae) values ('carlos fonseca souza','clara ana souza');
+insert into pais (nome_pai,nome_mae) values ('jose douglas santos','antonia santos');
+                                             
+                                             
 -- a linha abaixo cria a tabela ocorrencias
 create table ocorrencias (
 idocorrencias int not null primary key auto_increment,
