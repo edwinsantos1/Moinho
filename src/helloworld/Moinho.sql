@@ -54,6 +54,10 @@ hora_fim time
 
 );
 
+
+-- a linha abaixo insere valores na tabela horario
+insert into horario(hora_inicio,hora_fim) values ('07:00','11:00');
+
 -- a tabela abaixo cria a tabela cadastro_universal
 create table cadastro_universal (
 idcadastro int not null primary key auto_increment,
