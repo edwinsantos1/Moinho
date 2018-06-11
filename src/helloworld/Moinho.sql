@@ -34,7 +34,10 @@ ano_de_ingresso date,
 area_de_atuacao varchar(50),
 turmas_ministradas varchar(50)
 
-);
+);-- a linha abaixo insere valores na tabela horario
+insert into horario(hora_inicio,hora_fim) values ('07:00','11:00');
+
+
 
 -- a linha abaixo cria a tabela turno
 create table turno(
@@ -42,9 +45,8 @@ idturno int not null primary key auto_increment,
 turnoo enum('M','V','N')
 
 );
-
--- a linha abaixo faz a inserção dos turnos
-insert into turno (turnoo) values ('M'), ('V'),('N');
+-- a linha abaixo insere valores na tabela horario
+insert into horario(hora_inicio,hora_fim) values ('07:00','11:00');
 
 -- a linha abaixo cria a tabela de horario
 create table horario (
@@ -53,6 +55,7 @@ hora_inicio time,
 hora_fim time
 
 );
+
 
 -- a tabela abaixo cria a tabela cadastro_universal
 create table cadastro_universal (
@@ -131,9 +134,6 @@ idturma int not null primary key auto_increment,
 tipoturma enum('B1','B2','B3','I')
 
 );
-
--- a linha abaixo insere na tabela turma
-insert into turma(tipoturma) values ('B1'),('B2'),('B3'),('I');
 
 -- a linha abaixo cria a tabela participantes
 create table participantes(
