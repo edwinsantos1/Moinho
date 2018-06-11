@@ -43,6 +43,9 @@ turnoo enum('M','V','N')
 
 );
 
+-- a linha abaixo insere valores na tabela horario
+insert into horario(hora_inicio,hora_fim) values ('07:00','11:00');
+
 -- a linha abaixo cria a tabela de horario
 create table horario (
 idhorario int not null primary key auto_increment,
